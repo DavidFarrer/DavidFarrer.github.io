@@ -25,7 +25,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#home"><img id="logo" src="images/DFLogo.jpg" />Dave Farrer</a>
+      <a class="navbar-brand" href="#home"><img id="logo" src="images/DFLogo.jpg" alt="Dave Farrer's logo" />Dave Farrer</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -53,7 +53,7 @@
 			<h2>About Me</h2>
       <div class="container-fluid biography">
   			<div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-0">
-  				<img id="self-img" src="./images/dave-farrer.png">
+  				<img id="self-img" src="./images/dave-farrer.png" alt="Profile image of David Farrer">
   			</div>
   			<div class="col-xs-12 col-sm-9">
   				<p>My name is Dave Farrer. I am a web developer who graduated with a B.Sc in Computer Science from the University of Windsor. I also have a B.Sc in Biology. My hobbies (besides coding) include working out, snowboarding and camping.</p>
@@ -134,7 +134,7 @@
         <h4>Must-Watch List</h4>
         <div class="row container-fluid">
           <div class="col-xs-12 col-sm-4">
-            <img src="./images/must-watch.png" />
+            <img src="./images/must-watch.png" alt="Must-Watch List website image" />
           </div>
           <div class="col-xs-12 col-sm-8 project-text">
             <p>An app that connects to the imdb-api and allows users to search for movies. After signing up, they can add movies to their personal list to watch. They can toggle movies as watched and delete movies from their list or see the movies that are most added by others.</p>
@@ -156,7 +156,7 @@
         <h4>Dynamic Piano Service</h4>
         <div class="row container-fluid">
           <div class="col-xs-12 col-sm-4">
-            <img src="./images/dynamic.png" />
+            <img src="./images/dynamic.png" alt="Dynamic Piano Service website image" />
           </div>
           <div class="col-xs-12 col-sm-8 project-text">
             <p>A website created for a local piano tuning business. I worked with the client to determine exactly what they wanted and then created a fully responsive website meeting their needs.</p>
@@ -174,7 +174,7 @@
         <h4>React Minesweeper</h4>
         <div class="row container-fluid">
           <div class="col-xs-12 col-sm-4">
-            <img src="./images/minesweeper.png" />
+            <img src="./images/minesweeper.png" alt="Minesweeper website image" />
           </div>
           <div class="col-xs-12 col-sm-8 project-text">
             <p>A minesweeper clone created from scratch using React.js. Includes bomb counter, timer and difficulty settings.</p>
@@ -191,7 +191,7 @@
         <h4>Online Outfitters (Coming soon!)</h4>
         <div class="row container-fluid">
           <div class="col-xs-12 col-sm-4">
-            <img src="./images/outfitters.png" />
+            <img src="./images/outfitters.png" alt="Coming Soon image of Online Outfitters website" />
           </div>
           <div class="col-xs-12 col-sm-8 project-text">
             <p>An online clothing store built with React/Redux. Online Outfitters will have a shopping cart where users can add and remove items.</p>
@@ -215,11 +215,11 @@
       <div id="form-div">
         <form action="https://formspree.io/dave.farrer89@gmail.com"
         method="POST">
-          <input type="text" name="name" placeholder="Name" required>
-          <input type="text" name="company" placeholder="Company">
-          <input type="email" name="_replyto" placeholder="Email" required>
-          <textarea name="message" placeholder="Message" required></textarea>
-          <input type="submit" value="Send">
+          <input type="text" name="name" placeholder="Name" aria-label="Name" required />
+          <input type="text" name="company" placeholder="Company" aria-label="Company" />
+          <input type="email" name="_replyto" placeholder="Email" aria-label="Email" required />
+          <textarea name="message" placeholder="Message" aria-label="Message" required></textarea>
+          <input type="submit" value="Send" aria-label="Submit" />
         </form>
       </div>
       <div id="social">

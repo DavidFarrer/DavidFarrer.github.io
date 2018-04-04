@@ -178,6 +178,33 @@ a {
 	margin-bottom: 9px;
 }
 
+.resume-div {
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.resume-div {
+		text-align: left;
+	}
+}
+
+.resume-link {
+	background-color: #052F5F;
+	border: 1px solid black;
+	border-radius: 5px;
+	color: white;
+	display: inline-block;
+	margin: 10px auto;
+	padding: 6px;
+}
+
+.resume-link:hover {
+	border-color: #FFA700;
+	color: #FFA700;
+	text-decoration: none;
+
+}
+
 .skills h3 {
 	text-align: center;
 	font-size: 2.5em;

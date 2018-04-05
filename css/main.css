@@ -202,7 +202,12 @@ a {
 	border-color: #FFA700;
 	color: #FFA700;
 	text-decoration: none;
+}
 
+.resume-link:focus {
+	border-color: #FFA700;
+	color: #FFA700;
+	text-decoration: none;
 }
 
 .skills h3 {

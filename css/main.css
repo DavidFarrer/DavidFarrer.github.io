@@ -1,3 +1,5 @@
+/* Globals */
+
 html {
   box-sizing: border-box;
 }
@@ -17,15 +19,29 @@ outline: 0;
 outline: none;
 }
 
+/* Tag selectors */
+
 h2 {
 	font-size: 4em;
 	color: #FFA700;
 	font-family: 'Vesper Libre', serif;
 	font-weight: 700;
 	font-variant: small-caps;
+	text-align: center;
 	text-decoration: underline;
 	text-shadow: 2px 2px 5px rgba(140, 91, 0, 0.3);
 }
+
+a {
+	text-decoration-color: none;
+}
+
+p {
+	font-size: 1.2em;
+	line-height: 1.6;
+}
+
+/* Nav */
 
 .navbar {
 	height: 74px;
@@ -91,22 +107,9 @@ h2 {
 	transition: opacity 0.6s 0 ease;
 }
 
-h2 {
-	text-align: center;
-}
-
-p {
-	font-size: 1.2em;
-	line-height: 1.6;
-}
-
 .navbar-brand img.logo-show {
 	transition: opacity 0.4s 0.2s ease;
 	opacity: 1;
-}
-
-a {
-	text-decoration-color: none;
 }
 
 .navbar-nav>li>a {
@@ -142,6 +145,23 @@ a {
 	margin-right: 10px;
 }
 
+@media (min-width: 435px) {
+	.navbar-brand {
+		font-size: 3em;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar-nav>li>a {
+		line-height: 70px;
+	}
+	.navbar-nav>li {
+		background-color: transparent;
+	}
+}
+
+/* Jumbotron Section */
+
 .jumbotron {
 	background-image: url("../images/jumbotron-background.jpg");
 	background-position: center;
@@ -157,9 +177,22 @@ a {
 	font-family: 'Vesper Libre', serif;
 }
 
+#typed-div {
+	padding-top: 110px;
+	text-align: center;
+}
+
+.typed-cursor {
+	font-size: 3em;
+	color: #FFF;
+}
+
 #home {
 	padding: 0;
 }
+
+
+/* About Section */
 
 #about {
 	background-color: #f9f9f9;
@@ -241,6 +274,8 @@ a {
 	padding: 0;
 }
 
+/* Projects Section */
+
 #projects {
 	background-color: #efefef;
 }
@@ -296,16 +331,6 @@ a {
 	text-decoration: none;
 }
 
-#typed-div {
-	padding-top: 110px;
-	text-align: center;
-}
-
-.typed-cursor {
-	font-size: 3em;
-	color: #FFF;
-}
-
 .technology {
 	display: inline-block;
 	border: 2px solid #06A77D;
@@ -313,6 +338,8 @@ a {
 	padding: 4px;
 	margin: 2px;
 }
+
+/* Contact Section */
 
 #contact {
 	border-top: 2px solid #ededed;
@@ -394,19 +421,4 @@ footer p {
 	margin: 0 10px;
 	color: white;
 	font-size: 0.9em;
-}
-
-@media (min-width: 435px) {
-	.navbar-brand {
-		font-size: 3em;
-	}
-}
-
-@media (min-width: 768px) {
-	.navbar-nav>li>a {
-		line-height: 70px;
-	}
-	.navbar-nav>li {
-		background-color: transparent;
-	}
 }
